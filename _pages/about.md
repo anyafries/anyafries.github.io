@@ -31,6 +31,6 @@ latest_posts:
 I am a PhD student in statistics at ETH Zurich, supervised by [Jonas Peters](https://people.math.ethz.ch/~jopeters/index.html) and co-supervised by [Markus Reichstein](https://www.bgc-jena.mpg.de/en/reichstein). 
 My research focuses on distribution generalisation, with applications in Earth system science.
 
-Before starting my PhD, I completed a BSc in mathematics and computer science at École Polytechnique and an MSc in Management Science and Engineering at Stanford University. At Stanford, I worked as a research assistant with [Summer Han](https://med.stanford.edu/summerhanlab.html); our work received a student paper award at JSM 2024.
+Before starting my PhD, I completed a BSc in mathematics and computer science at École Polytechnique and an MSc in management science and engineering at Stanford University. At Stanford, I worked as a research assistant with [Summer Han](https://med.stanford.edu/summerhanlab.html).
 
 **Contact**: anya.fries [at] stat.math.ethz.ch
