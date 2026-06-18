@@ -7,7 +7,7 @@ subtitle: PhD student in Statistics at ETH Zurich, Seminar for Statistics.
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   # more_info: >
   #   <p>555 your office number</p>
   #   <p>123 your address street</p>
@@ -28,5 +28,9 @@ latest_posts:
 ---
 
 
-I am a PhD student in statistics at ETH Zurich supervised by [Jonas Peters]() and co-supervised by [Markus Reichstein]. I am interested in distribution generalization with applications in earth system science. 
-After completing my BSc in mathematics and computer science at École Polytechnique, I completed my MSc in MS&E at Stanford University, where I was a research assistant with [Summer Han]() -- while there, our work won student paper award at JSM 2024. 
+I am a PhD student in statistics at ETH Zurich, supervised by [Jonas Peters](https://people.math.ethz.ch/~jopeters/index.html) and co-supervised by [Markus Reichstein](https://www.bgc-jena.mpg.de/en/reichstein). 
+My research focuses on distribution generalisation, with applications in Earth system science.
+
+Before starting my PhD, I completed a BSc in mathematics and computer science at École Polytechnique and an MSc in Management Science and Engineering at Stanford University. At Stanford, I worked as a research assistant with [Summer Han](https://med.stanford.edu/summerhanlab.html); our work received a student paper award at JSM 2024.
+
+**Contact**: anya.fries [at] stat.math.ethz.ch
