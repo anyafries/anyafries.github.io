@@ -1,0 +1,79 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+#
+# Local shadow of al_folio_core's assets/css/main.scss. It re-uses every gem-owned
+# _sass partial unchanged, then appends site-specific overrides at the bottom.
+# Kept under assets/css/ (not _sass/) so it passes the starter style-contract gate.
+# If you `bundle update` and styles look off, re-sync the @use block below with the
+# gem's main.scss (`gem fetch al_folio_core`).
+---
+@charset "utf-8";
+
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/* ===========================================================================
+   Site-specific overrides (Anya Fries)
+   These come after every gem partial above, so they win the cascade.
+   =========================================================================== */
+
+/* Accent color — replaces al-folio's default purple/cyan in both light & dark. */
+:root,
+html[data-theme="light"] {
+  --global-theme-color: #38ce65;
+  --global-hover-color: #cfdc13;
+}
+html[data-theme="dark"] {
+  --global-theme-color: #38ce65;
+  --global-hover-color: #cfdc13;
+}
+
+/* Font — Lora (loaded via the google_fonts URL in _config.yml). Headings and
+   navbar inherit from body, so this one rule cascades site-wide. Code/pre keep
+   their own monospace stacks. */
+body {
+  font-family: "Lora", serif;
+}
+
+/* Icon hovers → hover color (yellow) instead of the accent (green).
+   By default al-folio hovers these icons to --global-theme-color; text links
+   already use --global-hover-color, so this just makes the icons match. */
+
+/* Social icons on the about page footer. */
+.social .contact-icons a:hover i::before {
+  color: var(--global-theme-color);
+}
+
+/* Dark/light mode toggle in the navbar. The gem only recolors the "system"
+   half-sun-moon icon on hover; the `i` rule also covers the moon/sun icons. */
+#light-toggle:hover i,
+#light-toggle:hover .fa-half-sun-moon::before,
+#light-toggle:hover .fa-half-sun-moon::after {
+  color: var(--global-hover-color);
+}
