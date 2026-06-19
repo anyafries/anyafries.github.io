@@ -38,6 +38,7 @@ bundle install
 Verify with `ruby -v` (should print 4.0.5), then run the serve command above.
 
 Notes:
+
 - conda `(base)` in your PATH is fine; the appended rbenv init line takes
   precedence so `ruby` resolves to rbenv's Ruby, not the system 2.6.
 - If `ruby -v` still shows 2.6 after `exec zsh`, your conda init is running

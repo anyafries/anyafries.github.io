@@ -27,8 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-
-I am a PhD student in statistics at ETH Zurich, supervised by [Jonas Peters](https://people.math.ethz.ch/~jopeters/index.html) and co-supervised by [Markus Reichstein](https://www.bgc-jena.mpg.de/en/reichstein). 
+I am a PhD student in statistics at ETH Zurich, supervised by [Jonas Peters](https://people.math.ethz.ch/~jopeters/index.html) and co-supervised by [Markus Reichstein](https://www.bgc-jena.mpg.de/en/reichstein).
 My research focuses on distribution generalisation, with applications in Earth system science.
 
 Before starting my PhD, I completed a BSc in mathematics and computer science at École Polytechnique and an MSc in management science and engineering at Stanford University. At Stanford, I worked as a research assistant with [Summer Han](https://med.stanford.edu/summerhanlab.html).
