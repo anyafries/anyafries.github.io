@@ -61,6 +61,27 @@ body {
   font-family: "Lora", serif;
 }
 
+/* Publication award buttons → outlined in the hover color (yellow); on hover
+   they underline instead of changing color. */
+.publications ol.bibliography li .links a.award.btn {
+  border-color: var(--global-hover-color);
+
+  &:hover {
+    color: var(--global-text-color);
+    border-color: var(--global-hover-color);
+    text-decoration: underline;
+  }
+
+  /* Awards without a link (set by the script in _pages/publications.md). */
+  &.award-label {
+    cursor: default;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 /* Icon hovers → hover color (yellow) instead of the accent (green).
    By default al-folio hovers these icons to --global-theme-color; text links
    already use --global-hover-color, so this just makes the icons match. */
